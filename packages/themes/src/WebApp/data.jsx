@@ -7,9 +7,9 @@ import Envelope from '@pagerland/icons/src/line/Envelope';
 import FacebookF from '@pagerland/icons/src/line/FacebookF';
 import Instagram from '@pagerland/icons/src/line/Instagram';
 import Youtube from '@pagerland/icons/src/line/Youtube';
-import Cog from '@pagerland/icons/src/line/Cog';
-import Figma from '@pagerland/icons/src/line/Figma';
-import LifeRing from '@pagerland/icons/src/line/LifeRing';
+import User from '@pagerland/icons/src/line/User';
+import UsersAlt from '@pagerland/icons/src/line/UsersAlt';
+import Award from '@pagerland/icons/src/line/Award';
 
 import Typography from '@pagerland/common/src/components/Typography';
 import Img from '@pagerland/common/src/components/Img';
@@ -22,10 +22,10 @@ import techbragins from './assets/brands/techbragins.svg';
 import envato from './assets/brands/envato.svg';
 import geek from './assets/brands/geek.svg';
 
-import features1 from './assets/features.svg';
-import features2 from './assets/features-2.svg';
-import features3 from './assets/features-3.svg';
-import features4 from './assets/features-4.svg';
+import features1 from './assets/Feature-1.svg';
+import features2 from './assets/Feature-2.svg';
+import features3 from './assets/Feature-3.svg';
+import features4 from './assets/Feature-4.svg';
 
 import Screenshot from './assets/screenshot.jpg';
 import Screenshot2x from './assets/screenshot@2x.jpg';
@@ -146,28 +146,30 @@ export default {
         IconWrapperProps: {
           bg: 'primary',
         },
-        title: 'Built with Gatsby and React',
+        title: 'Aulas individuais',
         text:
-          'Donec dapibus quis neque eget dapibus. Curabitur ultrices massa ligula, gravida auctor dolor aliquet sed.',
-        icon: Cog,
+          'Nesta modalidade, aluno tem um plano de estudos personalizado: apenas treinaremos modelos de redação para os vestibulares desejados por ele.',
+        icon: User,
       },
       {
         IconWrapperProps: {
           bg: 'secondary',
         },
-        title: 'Custom design in Figma',
+        title: 'Aulas em dupla',
         text:
-          'Donec dapibus quis neque eget dapibus. Curabitur ultrices massa ligula, gravida auctor dolor aliquet sed.',
-        icon: Figma,
+          `Nesta modalidade, atendimento direcionado para as necessidades da apenas treinaremos modelos de redação para os vestibulares
+          desejados por ambos.`,
+          icon: UsersAlt,
       },
       {
         IconWrapperProps: {
           bg: 'tertiary',
         },
-        title: 'Incredible support',
+        title: 'Curso extensivo',
         text:
-          'Donec dapibus quis neque eget dapibus. Curabitur ultrices massa ligula, gravida auctor dolor aliquet sed.',
-        icon: LifeRing,
+        `Esta modalidade abrange os principais vestibulares (Fuvest, Unicamp, Vunesp e Enem).
+         Os grupos são formados por 4 alunos - o aluno pode formar o grupo ou isso pode ficar a critério da professora (consulte a disponibilidade dessas opções)`,
+        icon: Award,
       },
     ],
   },
@@ -237,7 +239,7 @@ export default {
   },
 
   comments: {
-    title: 'Screenshots',
+    title: 'Depoimentos',
     comments: [
       {
         ImgProps: {
@@ -245,9 +247,10 @@ export default {
           srcSet: `${Screenshot} 1x, ${Screenshot2x} 2x`,
           alt: 'Screenshot',
         },
-        author: 'Screenshot name',
+        author: 'Felipe Azank, aprovado em Engenharia na Poli-USP',
         text:
-          'Proin consectetur in enim a aliquam. Vivamus lacinia et orci at varius. Nam nisi libero, faucibus non metus consequat, lacinia facilisis orci.',
+          ` Fiz aulas com a Bruna durante o segundo e o terceiro colegial, tanto presencialmente quanto a distância e atesto, sem a menor dúvida, que os conhecimentos passados e as correções feitas por ela foram a garantia necessária para a aprovação. Durante as aulas, foi possível abordar muitos temas , com características variadas: filosóficos,literários e discussões de acontecimentos da contemporaneidade, o que me preparou não só para a FUVEST , mas também para todos os outros vestibulares que prestei. Suas lições foram além do escopo da redação, ajudando-me em temas de literatura, interpretação de texto e na elaboração de respostas dissertativas. Sou muito grato pela Bruna e tenho certeza de que suas aulas são totalmente suficientes para arrasar em qualquer redação de qualquer vestibular.
+          `
       },
       {
         ImgProps: {
@@ -255,19 +258,10 @@ export default {
           srcSet: `${Screenshot} 1x, ${Screenshot2x} 2x`,
           alt: 'Screenshot',
         },
-        author: 'Second screenshot name',
+        author: 'Maria Fernanda Kroll, aprovada em Psicologia-USP',
         text:
-          'Curabitur ut lectus hendrerit, efficitur ante non, vulputate nibh. Aenean luctus consequat nunc id aliquam. Praesent pellentesque.',
-      },
-      {
-        ImgProps: {
-          src: Screenshot,
-          srcSet: `${Screenshot} 1x, ${Screenshot2x} 2x`,
-          alt: 'Screenshot',
-        },
-        author: 'Third screenshot name',
-        text:
-          'Vestibulum id tempor neque, viverra posuere nulla. Nulla sagittis augue id pretium finibus. Praesent vel lacinia velit. Suspendisse ornare porta.',
+          `Sempre gostei de escrever e meus amigos me diziam que eu escrevia muito bem. Dessa forma, acreditava que não teria dificuldades para fazer as redações de vestibular. A primeira nota abaixo da média me mostrou que eu estava errada. Acho que isso acontece com muita gente, pois o esquema de redação no vestibular é bem diferente e é difícil se adaptar a ele. Assim, comecei a fazer aulas com a Bruna e aprendi muita, muita coisa. Não apenas o modelo da redação em si - o que foi muito importante -, mas também sobre tudo o que gira em torno de uma redação, a realidade dos possíveis temas propostos e do cenário brasileiro como um todo, além de descobrir inúmeras possíveis referências  sobre as quais nunca tinha pensado. Por causa das aulas, consegui uma nota boa na redação em todos os vestibulares, além de me sair melhor nas questões de português e, até mesmo, tive mais facilidade em elaborar as respostas de outras matérias. Foi um grande diferencial para mim como um todo e sou muito grata por todas as aulas e aprendizados. Valeu super a pena!
+          `,
       },
     ],
   },
@@ -316,40 +310,42 @@ export default {
       sections: [
         {
           title: 'Indiviual',
-          price: 'R$ 450',
-          period: 'Por mês',
+
           features: [
             {
               text: 'Aluno',
               prefix: '1',
             },
             {
-              text: 'de aula',
+              text: 'personalizado',
+              prefix: 'Plano de estudos',
+            },      
+            
+            {
+              text: 'de aulas',
               prefix: '1:30',
+            },            
+            
+
+            {
+              text: 'teóricas',
+              prefix: 'Aulas',
             },
             {
-              text: 'projects',
-              prefix: '5',
+              text: 'de temas',
+              prefix: 'discussao',
             },
             {
-              text: 'tasks',
-              prefix: 'No',
+              text: 'para correção',
+              prefix: 'Plantao',
             },
             {
-              text: 'subtasks',
-              prefix: 'No',
-            },
-            {
-              text: 'invoicing',
-              prefix: 'No',
-            },
-            {
-              text: 'estimating',
-              prefix: 'No',
+              text: 'para orientação da reescrita.',
+              prefix: 'Plantao',
             },
           ],
           button: {
-            text: 'Try now',
+            text: 'Consultar valor',
             ButtonProps: {
               as: 'a',
               href: 'https://mypags.app',
@@ -358,13 +354,17 @@ export default {
         },
         {
           title: 'Duplas',
-          price: 'R$ 400',
-          period: 'Por mês',
+          // price: 'R$ 400',
+          // period: 'Por mês',
           features: [
             {
               text: 'Alunos',
               prefix: '2',
             },
+            {
+              text: 'compartilhado',
+              prefix: 'Plano de estudos',
+            },   
             {
               text: 'de aula',
               prefix: '2h',
@@ -400,8 +400,7 @@ export default {
         },
         {
           title: 'Extensivo',
-          price: 'R$ 450',
-          period: 'per month',
+
           features: [
             {
               text: 'Alunos',
@@ -444,9 +443,9 @@ export default {
     },
   },
   cta: {
-    title: 'Do you like what you see?',
+    title: 'Curtiu?',
     button: {
-      label: 'Buy it on Themeforest',
+      label: 'Entra em contato ;)',
       href:
         'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
     },

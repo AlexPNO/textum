@@ -41,7 +41,7 @@ const WebApp = ({ url }) => (
     <Welcome name="" />
     {/* <Brands name="" /> */}
     <About name="about" />
-    <Features name="features" />
+    {/* <Features name="features" /> */}
     {/* <Screenshots name="screens" /> */}
     <Testmonials />
     {/* <Clients name="clients" /> */}
