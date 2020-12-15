@@ -50,7 +50,9 @@ const Features = ({
             <Typography {...TextProps}>{text}</Typography>
           </Fade>
         </Box>
+{/* 
         <Box {...FeaturesWrapperProps}>
+
           <List {...FeaturesListProps}>
             {features.map((feature, key) => (
               <Fade cascade bottom duration={600} key={key} delay={key * 100}>
@@ -80,6 +82,7 @@ const Features = ({
             </Box>
           </Box>
         </Box>
+       */}
       </Container>
     </Box>
   );

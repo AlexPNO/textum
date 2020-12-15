@@ -50,7 +50,7 @@ export default {
       },
       {
         to: 'screens',
-        label: 'Sobre a Bruna Giro',
+        label: 'Sobre Bruna Giro',
       },
       {
         to: 'clients',
@@ -91,8 +91,8 @@ export default {
         variant: 'secondary',
       },
       {
-        label: 'Agendar uma aula',
-        href: 'https://mypags.app',
+        label: 'Entrar em contato',
+        href: 'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F',
         as: 'a',
         variant: 'primary',
       },
@@ -317,32 +317,17 @@ export default {
               prefix: '1',
             },
             {
-              text: 'personalizado',
-              prefix: 'Plano de estudos',
+              text: 'Plano de estudos personalizado',
+              prefix: '',
             },      
-            
             {
-              text: 'de aulas',
-              prefix: '1:30',
+              text: 'de aula teórica',
+              prefix: '1h',
             },            
-            
-
             {
-              text: 'teóricas',
-              prefix: 'Aulas',
-            },
-            {
-              text: 'de temas',
-              prefix: 'discussao',
-            },
-            {
-              text: 'para correção',
-              prefix: 'Plantao',
-            },
-            {
-              text: 'para orientação da reescrita.',
-              prefix: 'Plantao',
-            },
+              text: 'de plantao individual',
+              prefix: '30m',
+            },      
           ],
           button: {
             text: 'Consultar valor',
@@ -362,36 +347,20 @@ export default {
               prefix: '2',
             },
             {
-              text: 'compartilhado',
-              prefix: 'Plano de estudos',
-            },   
+              text: 'Plano de estudos personalizado',
+              prefix: '',
+            },      
             {
-              text: 'de aula',
-              prefix: '2h',
-            },
+              text: 'de aula teórica',
+              prefix: '1h',
+            },            
             {
-              text: 'projects',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'tasks',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'subtasks',
-              prefix: 'No',
-            },
-            {
-              text: 'invoices per month',
-              prefix: '10',
-            },
-            {
-              text: 'estimates per month',
-              prefix: '10',
-            },
+              text: 'de plantao individual',
+              prefix: '30m',
+            },      
           ],
           button: {
-            text: 'Try now',
+            text: 'Consultar valor',
             ButtonProps: {
               as: 'a',
               href: 'https://mypags.app',
@@ -407,32 +376,20 @@ export default {
               prefix: '4',
             },
             {
-              text: 'por semana para aula teórica e/ou discussão',
-              prefix: '1H',
-            },
+              text: 'Foco nos principais vestibulares',
+              prefix: '',
+            },      
             {
-              text: 'projects',
-              prefix: 'Unlimited',
-            },
+              text: 'de aula teórica',
+              prefix: '1h',
+            },            
             {
-              text: 'tasks',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'subtasks',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'invoicing',
-              prefix: 'Unlimited',
-            },
-            {
-              text: 'estimating',
-              prefix: 'Unlimited',
-            },
+              text: 'de plantao individual',
+              prefix: '30m',
+            },      
           ],
           button: {
-            text: 'Try now',
+            text: 'Consultar valor',
             ButtonProps: {
               as: 'a',
               href: 'https://mypags.app',
