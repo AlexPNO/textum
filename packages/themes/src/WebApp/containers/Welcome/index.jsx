@@ -50,18 +50,7 @@ const Welcome = ({
           </Box>
         </Fade>
       </Box>
-      <Box {...HeroImgWrapperProps}>
-        <Reveal ssrReveal ssrFadeout effect="liquid" duration={600}>
-          <Liquid {...LiquidProps} />
-        </Reveal>
-        {/* { features.map((feature, key) => (
-          <Box {...feature.WrapperProps}>
-            <Parallax {...feature.ParallaxProps} key={key}>
-              <Img {...feature.ImgProps} />
-            </Parallax>
-          </Box>
-        ))} */}
-      </Box>
+
     </Container>
   </Box>
 );

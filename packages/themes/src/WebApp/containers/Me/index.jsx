@@ -15,15 +15,16 @@ import arrows from '../../assets/arrows.svg';
 import data from '../../data';
 import { FeatureItem } from './styled.components';
 
-const Features = ({
+const Me = ({
   WrapperProps,
   ContainerProps,
   SpacerProps,
   CaptionProps,
   TitleProps,
   TextProps,
-  FeaturesWrapperProps,
-  FeaturesListProps,
+  MeWrapperProps,
+  IconWrapperProps,
+  MeListProps,
   FeatureTitleProps,
   FeatureTextProps,
   ActiveIndicatorProps,
@@ -34,15 +35,13 @@ const Features = ({
   title,
   text,
   name,
-  features,
+  icon,
+  me,
 }) => {
   const [active, setActive] = useState(0);
 
   return (
     <Box name={name} {...WrapperProps}>
-      <Fade top cascade duration={600}>
-        <Img src={arrows} alt="Spacer" {...SpacerProps} />
-      </Fade>
       <Container {...ContainerProps}>
         <Box {...CaptionProps}>
           <Fade bottom cascade duration={600}>
@@ -56,7 +55,7 @@ const Features = ({
   );
 };
 
-Features.propTypes = {
+Me.propTypes = {
   /**
    * Name of container, can be used for anchors
    */
@@ -92,15 +91,15 @@ Features.propTypes = {
    */
   TextProps: PropTypes.object,
   /**
-   * Props of features wrapper
+   * Props of me wrapper
    * @See @pagerland/common/src/components/Box
    */
-  FeaturesWrapperProps: PropTypes.object,
+  MeWrapperProps: PropTypes.object,
   /**
-   * Props of Features list
+   * Props of me list
    * @See @pagerland/common/src/components/List
    */
-  FeaturesListProps: PropTypes.object,
+  MeListProps: PropTypes.object,
   /**
    * Feature title text props
    * @See @pagerland/common/src/components/Typography
@@ -131,6 +130,8 @@ Features.propTypes = {
    * @See @pagerland/common/src/components/Box
    */
   FeatureDetailsItemProps: PropTypes.object,
+
+  IconWrapperProps: PropTypes.object,
   /**
    * Single detail item props for mobile
    * @See @pagerland/common/src/components/Box
@@ -145,9 +146,9 @@ Features.propTypes = {
    */
   text: PropTypes.node,
   /**
-   * List of features
+   * List of me
    */
-  features: PropTypes.arrayOf(
+  me: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.node,
       text: PropTypes.node,
@@ -156,12 +157,12 @@ Features.propTypes = {
   ),
 };
 
-Features.defaultProps = {
+Me.defaultProps = {
   WrapperProps: {
     overflow: 'hidden',
     py: {
       _: 30,
-      lg: 30,
+      lg: 0,
     },
   },
   SpacerProps: {
@@ -171,6 +172,19 @@ Features.defaultProps = {
       _: 30,
       lg: 90,
     },
+  },
+
+  IconWrapperProps: {
+    width: 90,
+    height: 90,
+    mx: 'auto',
+    mb: 4,
+    flexBox: true,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '50%',
+    color: 'gray.7',
+    fontSize: 40,
   },
   CaptionProps: {
     maxWidth: 770,
@@ -183,15 +197,15 @@ Features.defaultProps = {
     },
   },
   TitleProps: {
-    as: 'h2',
-    variant: 'h2',
+    as: 'h3',
+    variant: 'h3',
     mb: 4,
   },
   TextProps: {
     variant: 'body1',
     color: 'gray.2',
   },
-  FeaturesWrapperProps: {
+  MeWrapperProps: {
     flexBox: true,
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -200,7 +214,7 @@ Features.defaultProps = {
       lg: 'row',
     },
   },
-  FeaturesListProps: {
+  MeListProps: {
     maxWidth: 470,
   },
   FeatureTitleProps: {
@@ -252,7 +266,7 @@ Features.defaultProps = {
     },
     mt: 16,
   },
-  ...data.features,
+  ...data.me,
 };
 
-export default Features;
+export default Me;

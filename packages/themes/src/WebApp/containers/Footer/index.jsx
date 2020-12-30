@@ -48,6 +48,18 @@ const Footer = ({
             ))}
           </Box>
         </Box>
+
+        <Box>
+          <Fade bottom cascade duration={600}>
+            <div>
+              <Typography {...HeadingsProps}>{section3.title}</Typography>
+              <Typography {...TypographyProps} width={270}>
+                {section3.text}
+              </Typography>
+            </div>
+          </Fade>
+        </Box>
+
         <Box>
           <Fade bottom cascade duration={600}>
             <div>
@@ -61,19 +73,7 @@ const Footer = ({
             </div>
           </Fade>
         </Box>
-        <Box>
-          <Fade bottom cascade duration={600}>
-            <div>
-              <Typography {...HeadingsProps}>{section3.title}</Typography>
-              <Typography {...TypographyProps} width={270}>
-                {section3.text}
-              </Typography>
-            </div>
-            <Button as="a" href={section3.cta.href} title={section3.cta.text} {...CtaProps}>
-              {section3.cta.text}
-            </Button>
-          </Fade>
-        </Box>
+       
       </Grid>
     </Container>
   </Box>

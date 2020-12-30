@@ -70,13 +70,13 @@ const Pricing = ({
                 ))}
               </List>
 
-              <Button
+{/*               <Button
                 {...CardButtonProps}
                 {...sections[i]?.CardButtonProps}
                 {...section.button.ButtonProps}
               >
                 {section.button.text}
-              </Button>
+              </Button> */}
             </Card>
           ))}
         </CardWrapper>

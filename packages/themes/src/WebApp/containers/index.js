@@ -3,6 +3,7 @@ export { default as Welcome } from './Welcome';
 export { default as Brands } from './Brands';
 export { default as About } from './About';
 export { default as Features } from './Features';
+export { default as Me } from './Me';
 export { default as Screenshots } from './Screenshots';
 export { default as Testmonials } from './Testmonials';
 export { default as Clients } from './Clients';

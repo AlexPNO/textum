@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 function Index({ description, meta, title }) {
-  const formattedTitle = `${title} | Pagerland Next`;
+  const formattedTitle = `${title} | Curso de redação`;
 
   return (
     <Head>

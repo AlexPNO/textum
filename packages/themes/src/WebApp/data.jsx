@@ -37,23 +37,24 @@ export default {
   navbar: {
     links: [
       {
-        to: '',
+        to: 'welcome',
         label: 'Home',
       },
       {
-        to: 'about',
+        to: 'features',
         label: 'Curso',
       },
       {
-        to: 'features',
-        label: 'Modalidades',
-      },
-      {
-        to: 'screens',
+        to: 'me',
         label: 'Sobre Bruna Giro',
       },
       {
-        to: 'clients',
+        to: 'about',
+        label: 'Modalidades',
+      },
+
+      {
+        to: 'testimonials',
         label: 'Depoimentos',
       },
       // {
@@ -61,7 +62,7 @@ export default {
       //   label: 'Pricing',
       // },
       {
-        to: 'contact',
+        to: 'cta',
         label: 'Contato',
       },
     ],
@@ -141,6 +142,9 @@ export default {
     },
   ],
   about: {
+    title: 'Modalidades',
+    text:
+      'O curso de Redação Bruna Giro oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia! As aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada e sempre parte do texto. Além disso, as aulas são dinâmicas, com ativa participação do aluno. Confira as modalidades:',
     sections: [
       {
         IconWrapperProps: {
@@ -176,7 +180,7 @@ export default {
   features: {    
     title: 'Piracicaba oferece inúmeras opções de cursos voltados à redação para o vestibular. Por que mais um?',
     text:
-      'O curso de Redação Bruna Giro oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia! As aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada e sempre parte do texto. Além disso, as aulas são dinâmicas, com ativa participação do aluno. Confira as modalidades:',
+      'O curso de Redação Bruna Giro oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia! As aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada e sempre parte do texto. Além disso, as aulas são dinâmicas, com ativa participação do aluno.',
     features: [
       {
         title: 'Individual',
@@ -202,6 +206,49 @@ export default {
       },
     ],
   },
+  me: {    
+    title: 'Sobre Bruna Giro',
+    text:
+      `
+      Bruna Giro é formada em Letras (Unesp), mestre em Estudos Literários (Unesp) e especialista em “Teorias Linguísticas e Ensino” (Unesp).
+    Com mais de 13 anos de experiência, atua como professora de Língua Portuguesa, Literatura e Redação e já lecionou em colégios particulares renomados de Piracicaba e Região.
+    Possui experiência em correção de importantes vestibulares do país.
+
+      `,
+
+      IconWrapperProps: {
+        bg: 'primary',
+      },
+      
+      icon: User,
+
+
+    features: [
+      {
+        title: 'Individual',
+        text:
+          'Nesta modalidade, aluno tem um plano de estudos personalizado: apenas treinaremos modelos de redação para os vestibulares desejados por ele. Tempo: 1h30min,incluindo: aula teórica/discussão de temas/plantão para correção e orientação da reescrita.',
+        details: <Img src={features1} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
+      },
+      {
+        title: 'Dupla',
+        text:
+          `Nesta modalidade, atendimento direcionado para as necessidades da apenas treinaremos modelos de redação para os vestibulares
+          desejados por ambos.
+          *Tempo: 1h por semana para aula teórica e/ou discussão de tema e 30min de atendimento individual para cada estudante.
+          Obs: as duplas deverão ser formadas pelos alunos interessados.`,
+        details: <Img src={features2} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
+      },
+      {
+        title: 'Extensivo',
+        text:
+          `Esta modalidade abrange os principais vestibulares (Fuvest, Unicamp, Vunesp e Enem).
+          Grupos formados por 4 alunos - o aluno pode formar o grupo ou isso pode ficar a critério da professora (consulte a disponibilidade dessas opções) *Tempo: 1h por semana para aula teórica e/ou discussão de tema e 30min de atendimento individual para cada estudante.`,
+        details: <Img src={features3} maxWidth="121.0526315789%" ml="-10.5%" mt="-10.9%" />,
+      },
+    ],
+  },
+
   screenshots: {
     title: 'Screenshots',
     screenshots: [
@@ -403,56 +450,50 @@ export default {
     title: 'Curtiu?',
     button: {
       label: 'Entra em contato ;)',
-      href:
-        'https://themeforest.net/item/pagerland-react-and-gatsby-landing-page-templates/26548567',
+      href:      
+        'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F'
     },
   },
   socialLinks: [
-    {
-      icon: FacebookF,
-      href: 'https://mypags.app',
-      title: 'Facebook',
-    },
     {
       icon: Instagram,
       href: 'https://mypags.app',
       title: 'Instagram',
     },
-    {
-      icon: Youtube,
-      href: 'https://mypags.app',
-      title: 'YouTube',
-    },
   ],
   footer: {
     section1: {
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus dolor et dolor eleifend laoreet. Donec id nisi finibus, consequat libero vitae, imperdiet urna.`,
+      text: `
+        Bruna Giro é formada em Letras (Unesp), mestre em Estudos Literários (Unesp) e especialista em “Teorias Linguísticas e Ensino” (Unesp).
+    Possui experiência em correção de importantes vestibulares do país.
+
+      `,
     },
     contact: {
-      title: 'Contact',
+      title: 'Contato',
       sections: [
         {
           icon: MapMarker,
-          text: textToMultiline(`9207 Lakeshore Rd\nShreveport, Rhode Island\n98563 United States`),
+          text: `Piracicaba/SP`,
         },
         {
           icon: Phone,
-          text: '(262) 555-0131',
+          text: '(19) 9 9938-2854',
         },
         {
           icon: Envelope,
-          text: 'info@example.com',
+          text: 'brunagiro@gmail.com',
         },
       ],
     },
     section3: {
-      title: 'Support & downloads',
-      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rhoncus dolor et dolor eleifend.`,
+      title: '',
+      text: ``,
       cta: {
-        text: 'Buy it on Themeforest',
-        href: 'https://mypags.app',
+        text: '',
+        href: '',
       },
     },
   },
-  copyright: '© 2020 Coffeecream Themes',
+  copyright: '© 2021 BrunaGiro',
 };

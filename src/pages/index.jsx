@@ -14,6 +14,7 @@ import {
   Brands,
   About,
   Features,
+  Me,
   Screenshots,
   Testmonials,
   Clients,
@@ -32,21 +33,26 @@ const WebApp = ({ url }) => (
       <meta name="theme-color" content={theme.colors.primary} />
       <meta property="og:image" content={`${url}${preview}`} />
     </Head>
-    <SEO title="Web App" />
+    <SEO title="Bruna Giro" />
 
     <Sticky style={{ zIndex: 999, position: 'relative' }}>
       <Navbar />
     </Sticky>
 
-    <Welcome name="" />
+    <Welcome name="welcome" />
     {/* <Brands name="" /> */}
-    <About name="about" TextProps= {{"color": "#204A65" }}/>
+
     <Features name="features" />
+    <Me name="me" />
+
+    <About name="about" TextProps= {{"color": "#204A65" }}/>
+  
     {/* <Screenshots name="screens" /> */}
-    <Testmonials />
+    {/* <Pricing name="pricing" /> */}
+    <Testmonials name="testimonials" />
     {/* <Clients name="clients" /> */}
-    <Pricing name="pricing" />
-    <Cta />
+
+    <Cta name="cta" />
 
     <Footer name="contact" />
     <Copyright />

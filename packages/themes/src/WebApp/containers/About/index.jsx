@@ -6,23 +6,41 @@ import Container from '@pagerland/common/src/components/Container';
 import Icon from '@pagerland/common/src/components/Icon';
 import Typography from '@pagerland/common/src/components/Typography';
 
+import Img from '@pagerland/common/src/components/Img';
+import arrows from '../../assets/arrows.svg';
+
 import Fade from 'react-reveal/Fade';
 import Grid from '@pagerland/common/src/components/Grid';
 import data from '../../data';
 
 const About = ({
+  title,
+  text,
   WrapperProps,
+  CaptionProps,
   ContainerProps,
+  SpacerProps,
   GridProps,
   SectionProps,
   IconWrapperProps,
   TitleProps,
   TextProps,
+  BigTitleProps,
+  BigTextProps,
   name,
   sections,
 }) => (
   <Box name={name} {...WrapperProps}>
+    
+    <Fade top cascade duration={600}>
+        <Img src={arrows} alt="Spacer" {...SpacerProps} />
+    </Fade>
+
     <Container {...ContainerProps}>
+      <Box {...CaptionProps}>
+        <Typography {...BigTitleProps}>{title}</Typography>
+        <Typography {...BigTextProps}>{text}</Typography>
+      </Box>
       <Grid {...GridProps}>
         {sections.map((section, key) => (
           <Box key={key} {...SectionProps}>
@@ -65,6 +83,8 @@ About.propTypes = {
    * @See @pagerland/common/src/components/Box
    */
   SectionProps: PropTypes.object,
+
+  SpacerProps: PropTypes.object,
   /**
    * Section icon wrapper props
    * @See @pagerland/common/src/components/Box
@@ -83,6 +103,17 @@ About.propTypes = {
   /**
    * List of brands images with link props
    */
+  BigTitleProps: PropTypes.object,
+  /**
+   * Main text props
+   * @See @pagerland/common/src/components/Typography
+   */
+  BigTextProps: PropTypes.object,
+  /**
+   * List of brands images with link props
+   */
+
+
   sections: PropTypes.arrayOf(
     PropTypes.shape({
       IconWrapperProps: PropTypes.object,
@@ -114,6 +145,16 @@ About.defaultProps = {
   SectionProps: {
     textAlign: 'center',
   },
+
+  SpacerProps: {
+    display: 'block',
+    mx: 'auto',
+    mb: {
+      _: 30,
+      lg: 90,
+    },
+  },
+
   IconWrapperProps: {
     width: 90,
     height: 90,
@@ -134,6 +175,26 @@ About.defaultProps = {
   TextProps: {
     color: 'gray.2',
   },
+  BigTitleProps: {
+    as: 'h2',
+    variant: 'h2',
+    mb: 4,
+  },
+  BigTextProps: {
+    variant: 'body1',
+    color: 'gray.2',
+  },
+
+  CaptionProps: {
+    maxWidth: 770,
+    mx: 'auto',
+    textAlign: 'center',
+    mb: {
+      _: 30,
+      md: 60,
+      lg: 100,
+    },
+  }, 
   ...data.about,
 };
 
