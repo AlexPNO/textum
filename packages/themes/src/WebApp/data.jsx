@@ -80,10 +80,10 @@ export default {
       <Typography as="span" variant="h1" color="primary">
         não é
       </Typography>,
-      ' apenas outro curso de redação 😉',
+      ' apenas mais um curso de redação 😉',
     ],
     text:
-      'Precisando daquela ajudinha em Redação? Com o curso de Redação “Bruna Giro”, você pode alcançar seus objetivos e garantir sua vaga nos melhores vestibulares do país!',
+      'Com o curso de Redação “Bruna Giro”, você pode alcançar seus objetivos e garantir sua vaga nos melhores vestibulares do país!',
     actions: [
       {
         label: 'Saiba mais',
@@ -92,7 +92,7 @@ export default {
         variant: 'secondary',
       },
       {
-        label: 'Entrar em contato',
+        label: 'Contate-nos',
         href: 'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F',
         as: 'a',
         variant: 'primary',
@@ -144,7 +144,7 @@ export default {
   about: {
     title: 'Modalidades',
     text:
-      'O curso de Redação Bruna Giro oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia! As aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada e sempre parte do texto. Além disso, as aulas são dinâmicas, com ativa participação do aluno. Confira as modalidades:',
+      'Confira as modalidades:',
     sections: [
       {
         IconWrapperProps: {
@@ -152,7 +152,7 @@ export default {
         },
         title: 'Aulas individuais',
         text:
-          'Nesta modalidade, aluno tem um plano de estudos personalizado: apenas treinaremos modelos de redação para os vestibulares desejados por ele.',
+          'O aluno tem um plano de estudos personalizado: apenas treinaremos modelos de redação para os vestibulares desejados por ele.',
         icon: User,
       },
       {
@@ -161,7 +161,7 @@ export default {
         },
         title: 'Aulas em dupla',
         text:
-          `Nesta modalidade, atendimento direcionado para as necessidades da apenas treinaremos modelos de redação para os vestibulares
+          `Atendimento direcionado para as necessidades da apenas treinaremos modelos de redação para os vestibulares
           desejados por ambos.`,
           icon: UsersAlt,
       },
@@ -172,15 +172,15 @@ export default {
         title: 'Curso extensivo',
         text:
         `Esta modalidade abrange os principais vestibulares (Fuvest, Unicamp, Vunesp e Enem).
-         Os grupos são formados por 4 alunos - o aluno pode formar o grupo ou isso pode ficar a critério da professora (consulte a disponibilidade dessas opções)`,
+         Os grupos são formados por 4 alunos (consulte a disponibilidade).`,
         icon: Award,
       },
     ],
   },
   features: {    
-    title: 'Piracicaba oferece inúmeras opções de cursos voltados à redação para o vestibular. Por que mais um?',
+    title: 'Piracicaba oferece inúmeras opções de cursos voltados à redação pré-vestibular. Por que mais um?',
     text:
-      'O curso de Redação Bruna Giro oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia! As aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada e sempre parte do texto. Além disso, as aulas são dinâmicas, com ativa participação do aluno.',
+      'O curso de Redação "Bruna Giro" oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia: as aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada, sempre parte do texto. Além disso, as aulas são dinâmicas, com a participação ativa do aluno.',
     features: [
       {
         title: 'Individual',
@@ -212,7 +212,6 @@ export default {
       `
       Bruna Giro é formada em Letras (Unesp), mestre em Estudos Literários (Unesp) e especialista em “Teorias Linguísticas e Ensino” (Unesp).
     Com mais de 13 anos de experiência, atua como professora de Língua Portuguesa, Literatura e Redação e já lecionou em colégios particulares renomados de Piracicaba e Região.
-    Possui experiência em correção de importantes vestibulares do país.
 
       `,
 
@@ -449,7 +448,7 @@ export default {
   cta: {
     title: 'Curtiu?',
     button: {
-      label: 'Entra em contato ;)',
+      label: 'Entra em contato!',
       href:      
         'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F'
     },
@@ -465,8 +464,6 @@ export default {
     section1: {
       text: `
         Bruna Giro é formada em Letras (Unesp), mestre em Estudos Literários (Unesp) e especialista em “Teorias Linguísticas e Ensino” (Unesp).
-    Possui experiência em correção de importantes vestibulares do país.
-
       `,
     },
     contact: {
