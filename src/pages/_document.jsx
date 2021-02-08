@@ -35,8 +35,8 @@ export default class MyDocument extends Document {
 
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-QQBP79H8LD`} 
-            // src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`} 
+            //src={`https://www.googletagmanager.com/gtag/js?id=`} 
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`} 
           />
           <script
             dangerouslySetInnerHTML={{
@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-QQBP79H8LD');`,
+            gtag('config', '${process.env.GOOGLE_ANALYTICS_TRACKING_ID}');`,
             }}
           />
         </body>
