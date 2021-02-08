@@ -27,6 +27,7 @@ export default class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="256x256" href="/next/icons/icon-256x256.png" />
           <link rel="apple-touch-icon" sizes="384x384" href="/next/icons/icon-384x384.png" />
           <link rel="apple-touch-icon" sizes="512x512" href="/next/icons/icon-512x512.png" />
+          <meta name="google-site-verification" content="TkDUZdznlw3froABJOlCC_ojW5vX6hrjb-ceUnG3SUk" />
         </Head>
         <body>
           <Main />
