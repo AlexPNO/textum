@@ -161,7 +161,7 @@ export default {
         },
         title: 'Aulas em dupla',
         text:
-          `Atendimento direcionado para as necessidades da apenas treinaremos modelos de redação para os vestibulares
+          `Atendimento direcionado para as necessidades da dupla: apenas treinaremos modelos de redação para os vestibulares
           desejados por ambos.`,
           icon: UsersAlt,
       },
@@ -180,7 +180,7 @@ export default {
   features: {    
     title: 'Piracicaba oferece inúmeras opções de cursos voltados à redação pré-vestibular. Por que mais um?',
     text:
-      'O curso de Redação "Bruna Giro" oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia: as aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada, sempre parte do texto. Além disso, as aulas são dinâmicas, com a participação ativa do aluno.',
+      'O curso oferece aulas moldadas às necessidades do aluno. Você aprende e treina apenas os modelos de redação dos vestibulares que pretende prestar. Outro ponto de destaque é a metodologia: as aulas do curso focalizam a prática da escrita. Assim, a teoria aparece de forma contextualizada, sempre parte do texto. Além disso, as aulas são dinâmicas, com a participação ativa do aluno.',
     features: [
       {
         title: 'Individual',
