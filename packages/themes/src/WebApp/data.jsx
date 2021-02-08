@@ -448,7 +448,7 @@ export default {
   cta: {
     title: 'Curtiu?',
     button: {
-      label: 'Entra em contato!',
+      label: 'Entre em contato!',
       href:      
         'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F'
     },
@@ -456,7 +456,7 @@ export default {
   socialLinks: [
     {
       icon: Instagram,
-      href: 'https://mypags.app',
+      href: 'https://www.instagram.com/prof.brunagiro/',
       title: 'Instagram',
     },
   ],
