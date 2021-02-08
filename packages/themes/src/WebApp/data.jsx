@@ -450,7 +450,7 @@ export default {
     button: {
       label: 'Entre em contato!',
       href:      
-        'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Me%20ajuda%20a%20quebrar%20tudo%20nos%20vestibulares%3F'
+        'https://api.whatsapp.com/send?phone=5519999382854&text=Ol%C3%A1%2C%20Bruna%20Giro!%20Voc%C3%AA%20poderia%20me%20passar%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20de%20reda%C3%A7%C3%A3o%3F'
     },
   },
   socialLinks: [
