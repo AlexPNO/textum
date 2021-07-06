@@ -309,6 +309,17 @@ export default {
           `Sempre gostei de escrever e meus amigos me diziam que eu escrevia muito bem. Dessa forma, acreditava que não teria dificuldades para fazer as redações de vestibular. A primeira nota abaixo da média me mostrou que eu estava errada. Acho que isso acontece com muita gente, pois o esquema de redação no vestibular é bem diferente e é difícil se adaptar a ele. Assim, comecei a fazer aulas com a Bruna e aprendi muita, muita coisa. Não apenas o modelo da redação em si - o que foi muito importante -, mas também sobre tudo o que gira em torno de uma redação, a realidade dos possíveis temas propostos e do cenário brasileiro como um todo, além de descobrir inúmeras possíveis referências  sobre as quais nunca tinha pensado. Por causa das aulas, consegui uma nota boa na redação em todos os vestibulares, além de me sair melhor nas questões de português e, até mesmo, tive mais facilidade em elaborar as respostas de outras matérias. Foi um grande diferencial para mim como um todo e sou muito grata por todas as aulas e aprendizados. Valeu super a pena!
           `,
       },
+      {
+        ImgProps: {
+          src: Screenshot,
+          srcSet: `${Screenshot} 1x, ${Screenshot2x} 2x`,
+          alt: 'Screenshot',
+        },
+        author: 'Isabela Nardo, aprovada em 1 lugar em Medicina na USP / Aprovada em Medicina na Unicamp',
+        text:
+          `As aulas com a Bruna foram essenciais para, principalmente, o meu desempenho no vestibular, mas também influenciaram muito a forma como eu penso hoje. Quanto à parte técnica e teórica, a Bruna sempre prezou pela estrutura impecável do texto e corrigia -quantas vezes fossem necessárias- qualquer erro que eu cometesse e que pudesse prejudicar minhas notas. Ela também estimulou (e muito) meu senso crítico, me incentivando a encontrar problemas, argumentos e soluções pra varias situações da vida. Por isso, foi por causa dela que minhas redações permitiram que eu passasse nos vestibulares que queria!!
+          `,
+      },
     ],
   },
 
